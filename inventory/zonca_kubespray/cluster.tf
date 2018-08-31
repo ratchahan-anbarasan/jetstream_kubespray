@@ -24,13 +24,13 @@ number_of_k8s_masters_no_floating_ip_no_etcd = 0
 flavor_k8s_master = "3"
 
 # nodes
-number_of_k8s_nodes = 2
-number_of_k8s_nodes_no_floating_ip = 2
+number_of_k8s_nodes = 0
+number_of_k8s_nodes_no_floating_ip = 1
 flavor_k8s_node = "3"
 
 # GlusterFS
 # either 0 or more than one
-#number_of_gfs_nodes_no_floating_ip = 0
+number_of_gfs_nodes_no_floating_ip = 0
 #gfs_volume_size_in_gb = 150
 # Container Linux does not support GlusterFS
 #image_gfs = "<image name>"
@@ -44,4 +44,4 @@ external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 #subnet_cidr = "<cidr>"
 floatingip_pool = "public"
 
-az_list = ["zone-r7"]
+az_list = ["zone-r7", "nova"]
