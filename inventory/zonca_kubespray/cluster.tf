@@ -2,7 +2,7 @@
 cluster_name = "kubespray"
 
 # SSH key to use for access to nodes
-public_key_path = "~/.ssh/id_rsa.pub"
+public_key_path = "~/.ssh/zonca-api-key.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
 image = "Ubuntu 16.04 Devel and Docker v.1.19"
