@@ -5,7 +5,7 @@ cluster_name = "kubespray"
 public_key_path = "~/.ssh/zonca-api-key.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
-image = "Ubuntu 16.04 Devel and Docker v.1.19"
+image = "JS-API-Featured-Ubuntu16-Aug-7-2018"
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
 ssh_user = "ubuntu"
 
