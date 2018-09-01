@@ -237,7 +237,7 @@ cert_manager_enabled: false
 # cert_manager_namespace: "cert-manager"
 
 # Add Persistent Volumes Storage Class for corresponding cloud provider ( OpenStack is only supported now )
-persistent_volumes_enabled: false
+persistent_volumes_enabled: true
 
 # Make a copy of kubeconfig on the host that runs Ansible in {{ inventory_dir }}/artifacts
 kubeconfig_localhost: true
