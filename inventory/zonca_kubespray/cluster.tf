@@ -47,4 +47,4 @@ external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 #subnet_cidr = "<cidr>"
 floatingip_pool = "public"
 
-az_list = ["zone-r7", "nova"]
+az_list = ["nova"]
