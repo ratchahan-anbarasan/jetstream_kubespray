@@ -24,12 +24,12 @@ number_of_k8s_masters = 1
 number_of_k8s_masters_no_etcd = 0
 number_of_k8s_masters_no_floating_ip = 0
 number_of_k8s_masters_no_floating_ip_no_etcd = 0
-flavor_k8s_master = "3"
+flavor_k8s_master = "2"
 
 # nodes
 number_of_k8s_nodes = 0
 number_of_k8s_nodes_no_floating_ip = 1
-flavor_k8s_node = "3"
+flavor_k8s_node = "2"
 
 # GlusterFS
 # either 0 or more than one
