@@ -43,7 +43,10 @@ number_of_gfs_nodes_no_floating_ip = 0
 
 # networking
 network_name = "zonca-k8s-kubespray-internal"
-external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
+# IU
+# external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
+# TACC
+external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
 #subnet_cidr = "<cidr>"
 floatingip_pool = "public"
 
