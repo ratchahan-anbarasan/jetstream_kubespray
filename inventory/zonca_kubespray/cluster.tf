@@ -42,7 +42,7 @@ number_of_gfs_nodes_no_floating_ip = 0
 #flavor_gfs_node = "<UUID>"
 
 # networking
-variable network_name {}
+network_name = "${var.cluster_name}"
 # IU
 # external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC
