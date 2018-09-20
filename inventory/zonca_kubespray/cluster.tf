@@ -5,9 +5,9 @@ cluster_name = "kubespray"
 public_key_path = "~/.ssh/zonca-api-key.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
-image = "JS-API-Featured-Ubuntu16-Aug-7-2018"
-#image = "JS-API-Featured-Ubuntu18-Aug-7-2018"
-#image = "JS-API-Featured-CentOS7-Aug-6-2018"
+image = "JS-API-Featured-Ubuntu16-Sep-18-2018"
+#image = "JS-API-Featured-Ubuntu18-Sep-18-2018"
+#image = "JS-API-Featured-CentOS7-Sep-18-2018"
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
 ssh_user = "ubuntu"
 #ssh_user = "centos"
