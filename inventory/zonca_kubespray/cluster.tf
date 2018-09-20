@@ -1,5 +1,5 @@
 # your Kubernetes cluster name here
-cluster_name = "kubespray"
+variable cluster_name {}
 
 # SSH key to use for access to nodes
 public_key_path = "~/.ssh/zonca-api-key.pub"
@@ -42,7 +42,7 @@ number_of_gfs_nodes_no_floating_ip = 0
 #flavor_gfs_node = "<UUID>"
 
 # networking
-network_name = "zonca-k8s-kubespray-internal"
+variable network_name = {}
 # IU
 # external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC

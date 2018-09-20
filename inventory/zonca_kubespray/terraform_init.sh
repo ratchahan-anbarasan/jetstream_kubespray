@@ -1,1 +1,1 @@
-terraform init -var-file=cluster.tf ../../contrib/terraform/openstack
+terraform init -var-file=cluster.tf -var "cluster_name=$CLUSTER" -var "network_name=${CLUSTER}-internal-network" ../../contrib/terraform/openstack
