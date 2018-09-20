@@ -1,1 +1,1 @@
-terraform apply -var-file=cluster.tf ../../contrib/terraform/openstack
+terraform apply -auto-approve -var-file=cluster.tf ../../contrib/terraform/openstack
