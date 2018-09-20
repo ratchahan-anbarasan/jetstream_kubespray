@@ -1,1 +1,1 @@
-terraform init -var-file=cluster.tf ../../contrib/terraform/openstack
+terraform apply -var-file=cluster.tf ../../contrib/terraform/openstack
