@@ -31,9 +31,10 @@ spec:
       nodeSelector:
         {{ ingress_nginx_nodeselector | to_nice_yaml }}
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: "node-role.kubernetes.io/master"
+          effect: NoSchedule
 {%- endif %}
+
       containers:
         - name: ingress-nginx-controller
           image: {{ ingress_nginx_controller_image_repo }}:{{ ingress_nginx_controller_image_tag }}
