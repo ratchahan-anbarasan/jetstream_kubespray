@@ -50,4 +50,7 @@ external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
 #subnet_cidr = "<cidr>"
 floatingip_pool = "public"
 
+# IU
+# az_list = ["zone-r6", "nova"]
+# TACC
 az_list = ["nova"]
