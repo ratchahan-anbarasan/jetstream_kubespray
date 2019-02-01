@@ -71,7 +71,7 @@ kube_users:
 
 # Choose network plugin (cilium, calico, contiv, weave or flannel)
 # Can also be set to 'cloud', which lets the cloud provider setup appropriate routing
-kube_network_plugin: calico
+kube_network_plugin: flannel
 
 # Kubernetes internal network for services, unused block of space.
 kube_service_addresses: 10.233.0.0/18
@@ -116,7 +116,7 @@ dns_mode: coredns
 #manual_dns_server: 10.x.x.x
 
 # Can be docker_dns, host_resolvconf or none
-resolvconf_mode: docker_dns
+resolvconf_mode: host_resolvconf
 # Deploy netchecker app to verify DNS resolve as an HTTP service
 deploy_netchecker: false
 # Ip address of the kubernetes skydns service
