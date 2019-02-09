@@ -26,6 +26,26 @@ resource "openstack_networking_secgroup_rule_v2" "k8s_master_ping" {
   security_group_id = "${openstack_networking_secgroup_v2.k8s_master.id}"
 }
 
+resource "openstack_networking_secgroup_rule_v2" "k8s_master_http" {
+  direction = "ingress"
+  ethertype = "IPv4"
+  protocol = "tcp"
+  port_range_min = "80"
+  port_range_max = "80"
+  remote_ip_prefix = "0.0.0.0/0"
+  security_group_id = "${openstack_networking_secgroup_v2.k8s_master.id}"
+}
+
+resource "openstack_networking_secgroup_rule_v2" "k8s_master_https" {
+  direction = "ingress"
+  ethertype = "IPv4"
+  protocol = "tcp"
+  port_range_min = "443"
+  port_range_max = "443"
+  remote_ip_prefix = "0.0.0.0/0"
+  security_group_id = "${openstack_networking_secgroup_v2.k8s_master.id}"
+}
+
 resource "openstack_networking_secgroup_v2" "bastion" {
   name        = "${var.cluster_name}-bastion"
   description = "${var.cluster_name} - Bastion Server"
