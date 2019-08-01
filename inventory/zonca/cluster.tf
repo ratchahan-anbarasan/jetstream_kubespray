@@ -48,7 +48,7 @@ external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
 floatingip_pool = "public"
 
 # IU
-# az_list = ["zone-r6", "nova"]
+# az_list = ["zone-r6"]
 # TACC
 az_list = ["nova"]
 
