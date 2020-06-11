@@ -8,6 +8,7 @@
       - python-apt
       - python-pip
       - dbus
+      - nfs-common
 
 - name: Bootstrap | Check if bootstrap is needed
   raw: dpkg -l | cut -d' ' -f3 |grep -e ^{{item}}$
