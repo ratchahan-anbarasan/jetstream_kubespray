@@ -5,7 +5,7 @@ variable cluster_name {}
 public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
-image = "JS-API-Featured-Ubuntu18-Feb-14-2020"
+image = "JS-API-Featured-Ubuntu18-Latest"
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
 ssh_user = "ubuntu"
 
