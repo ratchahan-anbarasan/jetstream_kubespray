@@ -118,5 +118,6 @@ ingress_alb_enabled: false
 # alb_ingress_aws_debug: "false"
 
 # Cert manager deployment
-cert_manager_enabled: true
+# Tried but was not working, better deploy afterwards
+cert_manager_enabled: false
 # cert_manager_namespace: "cert-manager"
