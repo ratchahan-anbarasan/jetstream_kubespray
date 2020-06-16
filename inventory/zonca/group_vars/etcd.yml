@@ -16,7 +16,7 @@
 
 ### ETCD: disable peer client cert authentication.
 # This affects ETCD_PEER_CLIENT_CERT_AUTH variable
-# etcd_peer_client_auth: true
+etcd_peer_client_auth: false
 
 ## Settings for etcd deployment type
 etcd_deployment_type: docker
