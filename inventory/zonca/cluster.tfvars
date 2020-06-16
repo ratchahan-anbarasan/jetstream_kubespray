@@ -1,5 +1,5 @@
 # SSH key to use for access to nodes
-public_key_path = "~/.ssh/zonca-api-key.pub"
+public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
 image = "JS-API-Featured-Ubuntu18-Latest"
@@ -44,7 +44,7 @@ flavor_k8s_node = "3"
 
 # networking
 
-network_name = "zonca-kubespray-network"
+network_name = "MODIFY_THIS_TO_UNIQUE_VALUE"
 # IU
 external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC
@@ -58,4 +58,7 @@ az_list = ["zone-r6"]
 az_list_node = ["zone-r6"]
 
 bastion_allowed_remote_ips = ["0.0.0.0/0"]
-k8s_allowed_remote_ips = ["192.31.21.23"]
+
+# if you only access from a subset of IPs, set this accordingly for
+# more security
+k8s_allowed_remote_ips = ["0.0.0.0/0"]
