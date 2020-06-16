@@ -58,3 +58,4 @@ az_list = ["zone-r6"]
 az_list_node = ["zone-r6"]
 
 bastion_allowed_remote_ips = ["0.0.0.0/0"]
+k8s_allowed_remote_ips = ["192.31.21.23"]
