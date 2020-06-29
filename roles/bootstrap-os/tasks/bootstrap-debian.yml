@@ -77,10 +77,10 @@
     - '"bionic" in os_release.stdout'
     - need_dnssec_allow_downgrade.rc
 
-- name: Install python
+- name: Install python and nfs-common
   raw:
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y python-minimal
+    DEBIAN_FRONTEND=noninteractive apt-get install -y python-minimal nfs-common
   become: true
   environment: {}
   when:
