@@ -5,7 +5,7 @@ cluster_name = "kubejetstream"
 #az_list = ["nova"]
 
 # SSH key to use for access to nodes
-public_key_path = "~/.ssh/zonca-api-key.pub"
+public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
 image = "JS-API-Featured-Ubuntu20-Latest"
