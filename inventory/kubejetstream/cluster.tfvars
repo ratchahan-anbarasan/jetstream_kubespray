@@ -1,6 +1,3 @@
-# your Kubernetes cluster name here
-cluster_name = "kubejetstream"
-
 # list of availability zones available in your OpenStack cluster
 #az_list = ["nova"]
 
@@ -56,9 +53,6 @@ number_of_k8s_nodes_no_floating_ip = 0
 # May be different from other nodes
 #ssh_user_gfs = "ubuntu"
 #flavor_gfs_node = "<UUID>"
-
-# networking
-network_name = "kubespray-network"
 
 # IU
 external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
