@@ -438,6 +438,9 @@ def main():
     if ips:
         hosts = iter_host_ips(hosts, ips)
 
+    hosts = ((name, attrs, hostgroups) for name, attrs, hostgroups in hosts if name.startswith(os.environ["CLUSTER"]))
+
+
     if args.list:
         output = query_list(hosts)
         if args.nometa:
