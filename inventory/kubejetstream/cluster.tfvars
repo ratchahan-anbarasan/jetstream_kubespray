@@ -1,17 +1,11 @@
-# your Kubernetes cluster name here
-cluster_name = "i-didnt-read-the-docs"
-
-# list of availability zones available in your OpenStack cluster
-#az_list = ["nova"]
-
 # SSH key to use for access to nodes
 public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
-image = "<image name>"
+image = "Featured-Ubuntu20"
 
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
-ssh_user = "<cloud-provisioned user>"
+ssh_user = "ubuntu"
 
 # 0|1 bastion nodes
 number_of_bastions = 0
@@ -24,18 +18,26 @@ number_of_etcd = 0
 # masters
 number_of_k8s_masters = 1
 
+# Uncomment and set a previously created IP (or list) for the master nodes
+k8s_master_fips = ["149.165.159.192"]
+
 number_of_k8s_masters_no_etcd = 0
 
 number_of_k8s_masters_no_floating_ip = 0
 
 number_of_k8s_masters_no_floating_ip_no_etcd = 0
 
-flavor_k8s_master = "<UUID>"
+flavor_k8s_master = "4"
+
+master_allowed_ports = [{"protocol" = "tcp", "port_range_min" = 80, "port_range_max" = 80, "remote_ip_prefix" = "0.0.0.0/0"}, {"protocol" = "tcp", "port_range_min" = 443, "port_range_max" = 443, "remote_ip_prefix" = "0.0.0.0/0"}]
 
 # nodes
-number_of_k8s_nodes = 2
+# for debugging purposes we can create nodes with floating ip
+# in production better use nodes with no floating ip
 
-number_of_k8s_nodes_no_floating_ip = 4
+number_of_k8s_nodes = 1
+
+number_of_k8s_nodes_no_floating_ip = 0
 
 #flavor_k8s_node = "<UUID>"
 
@@ -49,13 +51,23 @@ number_of_k8s_nodes_no_floating_ip = 4
 #ssh_user_gfs = "ubuntu"
 #flavor_gfs_node = "<UUID>"
 
-# networking
-network_name = "<network>"
+# Jetstream 2
+external_net = "3fe22c05-6206-4db2-9a13-44f04b6796e6"
 
-external_net = "<UUID>"
+# subnet_cidr = "<cidr>"
 
-subnet_cidr = "<cidr>"
+floatingip_pool = "public"
 
-floatingip_pool = "<pool>"
+# list of availability zones available in your OpenStack cluster
+# IU
+az_list = ["nova"]
+az_list_node = ["nova"]
 
 bastion_allowed_remote_ips = ["0.0.0.0/0"]
+
+# if you only access from a subset of IPs, set this accordingly for
+# more security
+k8s_allowed_remote_ips = ["0.0.0.0/0"]
+
+# have Kubernetes traffic use the internal IP
+use_access_ip = 0
