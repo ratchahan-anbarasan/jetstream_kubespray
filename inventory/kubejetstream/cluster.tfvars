@@ -1,11 +1,11 @@
 # list of availability zones available in your OpenStack cluster
-#az_list = ["nova"]
+az_list = ["nova"]
 
 # SSH key to use for access to nodes
 public_key_path = "~/.ssh/id_rsa.pub"
 
 # image to use for bastion, masters, standalone etcd instances, and nodes
-image = "JS-API-Featured-Ubuntu20-Latest"
+image = "Featured-Ubuntu20"
 
 # user on the node (ex. core on Container Linux, ubuntu on Ubuntu, etc.)
 ssh_user = "ubuntu"
@@ -55,9 +55,10 @@ number_of_k8s_nodes_no_floating_ip = 0
 #flavor_gfs_node = "<UUID>"
 
 # IU
-external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
+#external_net = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
 # TACC
 # external_net = "865ff018-8894-40c2-99b7-d9f8701ddb0b"
+external_net = "3fe22c05-6206-4db2-9a13-44f04b6796e6"
 
 # subnet_cidr = "<cidr>"
 
@@ -65,8 +66,8 @@ floatingip_pool = "public"
 
 # list of availability zones available in your OpenStack cluster
 # IU
-az_list = ["zone-r6"]
-az_list_node = ["zone-r6"]
+#az_list = ["zone-r6"]
+#az_list_node = ["zone-r6"]
 
 bastion_allowed_remote_ips = ["0.0.0.0/0"]
 
